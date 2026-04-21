@@ -1,7 +1,7 @@
 # 🚀 E-Sales AI: Real-Time Delivery Intelligence System
      An AI-powered dashboard for predicting delivery delays and analyzing e-commerce logistics in real time.
 
-### 📌 Introduction
+## 📌 Introduction
     Modern e-commerce platforms operate under tight delivery constraints where delays directly impact customer satisfaction, retention, and operational costs. Anticipating such delays before they occur enables proactive decision-making in logistics and supply chain management.
     The E-Sales Project is a machine learning–driven system designed to predict delivery delays and provide real-time analytical insights through an interactive dashboard. It combines predictive modeling, feature engineering, and live visualization to simulate a production-grade decision-support tool.
 
@@ -15,14 +15,14 @@
 ## 🧠 System Architecture
      The system is composed of three core components:
 
-     1. Data Processing Layer
+    ### 1. Data Processing Layer
         -Cleaned and structured e-commerce dataset
         -Feature engineering to capture logistics complexity
         -Derived features such as:
              (i)   Freight-to-price ratio
              (ii)  Approval delay indicators
              (iii) Order-level aggregations
-     2. Machine Learning Layer
+     ### 2. Machine Learning Layer
          Supervised classification model trained to predict delivery delays
          Outputs a probability score representing risk
          Uses engineered features capturing:
@@ -30,7 +30,7 @@
                 (ii) Order behavior
                 (iii) Payment and approval delays
                 (iv) Temporal signals
-     3. Visualization & Interaction Layer
+    ### 3. Visualization & Interaction Layer
           Built using Streamlit
           Provides:
             -Real-time predictions
