@@ -84,6 +84,58 @@
 <img width="1237" height="455" alt="image" src="https://github.com/user-attachments/assets/bd29ee5c-ec30-4c1d-bb58-443b83d398f9" />
 <img width="1237" height="574" alt="image" src="https://github.com/user-attachments/assets/0c494a7d-255c-4fcf-82a5-baf1d9282bd6" />
 
+##📂 Project Structure
+
+ESALES_PROJECT
+|   .gitattributes
+|   README.md
+|   requirements.txt
+|   
++---app
+|       streamlit_app.py
+|       
++---data
+|   +---processed
+|   |       esales_clean.csv
+|   |       preprocessed_data.csv
+|   |       
+|   \---raw
+|       \---archive
+|               olist_customers_dataset.csv
+|               olist_orders_dataset.csv
+|               olist_order_items_dataset.csv
+|               olist_order_payments_dataset.csv
+|               olist_products_dataset.csv
+|               product_category_name_translation.csv
+|               
++---models
+|       delivery_delay_model.pkl
+|       soft_voting_esales_model.pkl
+|       
+\---src
+        data_preprocessing.py
+        evaluate_model.py
+        feature_engineering.py
+        train_model.py
+## Installation & Usage
+## 1. Clone Repository
+     git clone https://github.com/yourusername/Esales_analysis.git
+     cd ESALES_PROJECT
+## 2. Install Dependencies
+     pip install -r requirements.txt
+## 3. Run Application
+     streamlit run app.py
+
+## 📊 Example Workflow
+    Input order details (price, freight, time, etc.)
+    Model predicts delay probability
+    Result is logged in real time
+    Dashboard updates instantly
+    Charts reflect new prediction
+    Metrics recalculated
+    Trends evolve dynamically
+## Video link    
+https://screenapp.io/app/v/Cw4_G7xrPu
 
 
 
@@ -93,3 +145,7 @@
          - Dynamic chart re-rendering using session state
          - Continuous accumulation of prediction logs
     This mimics a live monitoring environment similar to production analytics systems.    
+
+
+
+
