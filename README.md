@@ -79,6 +79,14 @@
       - Task: Binary Classification (delay/ no delay)
       - Risk Percentage
 ## Evaluation Metrics:
+<img width="600" height="464" alt="image" src="https://github.com/user-attachments/assets/b7ed3e50-cd2f-4108-9cd0-6921a1c82e18" />
+<img width="539" height="465" alt="image" src="https://github.com/user-attachments/assets/f0a12a57-5aaf-4406-be12-7b37444e46b0" />
+<img width="1237" height="455" alt="image" src="https://github.com/user-attachments/assets/bd29ee5c-ec30-4c1d-bb58-443b83d398f9" />
+<img width="1237" height="574" alt="image" src="https://github.com/user-attachments/assets/0c494a7d-255c-4fcf-82a5-baf1d9282bd6" />
+
+
+
+
 ## 📊 Real-Time System Behaviour
        Unlike static dashboards, this system supports:
          - Immediate UI updates after each prediction
