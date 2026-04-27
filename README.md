@@ -1,28 +1,28 @@
 # 🚀 E-Sales AI: Real-Time Delivery Intelligence System
-     An AI-powered dashboard for predicting delivery delays and analyzing e-commerce logistics in real time.
+An AI-powered dashboard for predicting delivery delays and analyzing e-commerce logistics in real time.
 
 ## 📌 Introduction
-    Modern e-commerce platforms operate under tight delivery constraints where delays directly impact customer satisfaction, retention, and operational costs. Anticipating such delays before they occur enables proactive decision-making in logistics and supply chain management.
-    The E-Sales Project is a machine learning–driven system designed to predict delivery delays and provide real-time analytical insights through an interactive dashboard. It combines predictive modeling, feature engineering, and live visualization to simulate a production-grade decision-support tool.
+Modern e-commerce platforms operate under tight delivery constraints where delays directly impact customer satisfaction, retention, and operational costs. Anticipating such delays before they occur enables proactive decision-making in logistics and supply chain management.
+The E-Sales Project is a machine learning–driven system designed to predict delivery delays and provide real-time analytical insights through an interactive dashboard. It combines predictive modeling, feature engineering, and live visualization to simulate a production-grade decision-support tool.
 
 ## 🎯 Objectives
-    The primary goals of this project are:
+The primary goals of this project are:
       -Predict the probability of delivery delays using structured order data
       -Provide a real-time monitoring system for predictions
       -Enable interactive exploration of delivery patterns and risk factors
       -Demonstrate an end-to-end ML pipeline from data to deployment
       
 ## 🧠 System Architecture
-     The system is composed of three core components:
+The system is composed of three core components:
 
-    1. Data Processing Layer
+   1. Data Processing Layer
         -Cleaned and structured e-commerce dataset
         -Feature engineering to capture logistics complexity
         -Derived features such as:
              (i)   Freight-to-price ratio
              (ii)  Approval delay indicators
              (iii) Order-level aggregations
-     2. Machine Learning Layer
+   2. Machine Learning Layer
          Supervised classification model trained to predict delivery delays
          Outputs a probability score representing risk
          Uses engineered features capturing:
@@ -30,7 +30,7 @@
                 (ii) Order behavior
                 (iii) Payment and approval delays
                 (iv) Temporal signals
-     3. Visualization & Interaction Layer
+    3. Visualization & Interaction Layer
           Built using Streamlit
           Provides:
             -Real-time predictions
@@ -39,22 +39,22 @@
             -Session-based logging system
 
 ## ⚙️ Key Features
-    1. AI- Based Prediction Delay:
-              Predicts delivery delay probability using 14 input features
-              Provides interpretable risk output (High / Low)
-              Designed for real-time inference
-    2. Real-Time Prediction Logging
-              Every prediction is stored in session state
-              Enables continuous monitoring of system behavior
-              Supports dynamic recalculation of metrics
-    3. Analytics Dashboard
-          Includes:
+ 1. AI- Based Prediction Delay:
+     Predicts delivery delay probability using 14 input features
+     Provides interpretable risk output (High / Low)
+     Designed for real-time inference
+ 2. Real-Time Prediction Logging
+     Every prediction is stored in session state
+     Enables continuous monitoring of system behavior
+     Supports dynamic recalculation of metrics
+ 3. Analytics Dashboard
+       Includes:
            -Risk distribution visualization
            -Time-based risk trends
            -Aggregate statistics (mean risk, counts)
 
 ## 📈 Feature Engineering
-      The model leverages 14 carefully designed features:
+ The model leverages 14 carefully designed features:
       Raw Features
           price
           freight_value
@@ -72,12 +72,12 @@
          freight_price_ratio → captures shipping cost intensity
          slow_approval → binary indicator for delayed payment approval
 
-      These features collectively encode logistical complexity, temporal behavior, and operational inefficiencies.
+These features collectively encode logistical complexity, temporal behavior, and operational inefficiencies.
 
 ## Model details:
-      - Model Type: Ensemble model of Random forest and XGBoost
-      - Task: Binary Classification (delay/ no delay)
-      - Risk Percentage
+- Model Type: Ensemble model of Random forest and XGBoost
+- Task: Binary Classification (delay/ no delay)
+- Risk Percentage
 ## Evaluation Metrics:
 <img width="600" height="464" alt="image" src="https://github.com/user-attachments/assets/b7ed3e50-cd2f-4108-9cd0-6921a1c82e18" />
 <img width="539" height="465" alt="image" src="https://github.com/user-attachments/assets/f0a12a57-5aaf-4406-be12-7b37444e46b0" />
@@ -97,24 +97,24 @@ ESALES_PROJECT │ .gitattributes │ README.md │ requirements.txt │ ├─�
      streamlit run app.py
 
 ## 📊 Example Workflow
-    Input order details (price, freight, time, etc.)
-    Model predicts delay probability
-    Result is logged in real time
-    Dashboard updates instantly
-    Charts reflect new prediction
-    Metrics recalculated
-    Trends evolve dynamically
+Input order details (price, freight, time, etc.)
+Model predicts delay probability
+Result is logged in real time
+Dashboard updates instantly
+Charts reflect new prediction
+Metrics recalculated
+Trends evolve dynamically
 ## Video link    
 https://screenapp.io/app/v/Cw4_G7xrPu
 
 
 
 ## 📊 Real-Time System Behaviour
-       Unlike static dashboards, this system supports:
+Unlike static dashboards, this system supports:
          - Immediate UI updates after each prediction
          - Dynamic chart re-rendering using session state
          - Continuous accumulation of prediction logs
-    This mimics a live monitoring environment similar to production analytics systems.    
+This mimics a live monitoring environment similar to production analytics systems.    
 
 
 
