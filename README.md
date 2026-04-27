@@ -1,18 +1,18 @@
-# 🚀 E-Sales AI: Real-Time Delivery Intelligence System
+#  E-Sales AI: Real-Time Delivery Intelligence System
 An AI-powered dashboard for predicting delivery delays and analyzing e-commerce logistics in real time.
 
-## 📌 Introduction
+##  Introduction
 Modern e-commerce platforms operate under tight delivery constraints where delays directly impact customer satisfaction, retention, and operational costs. Anticipating such delays before they occur enables proactive decision-making in logistics and supply chain management.
 The E-Sales Project is a machine learning–driven system designed to predict delivery delays and provide real-time analytical insights through an interactive dashboard. It combines predictive modeling, feature engineering, and live visualization to simulate a production-grade decision-support tool.
 
-## 🎯 Objectives
+##  Objectives
 The primary goals of this project are:
       -Predict the probability of delivery delays using structured order data
       -Provide a real-time monitoring system for predictions
       -Enable interactive exploration of delivery patterns and risk factors
       -Demonstrate an end-to-end ML pipeline from data to deployment
       
-## 🧠 System Architecture
+##  System Architecture
 The system is composed of three core components:
 
    1. Data Processing Layer
@@ -38,7 +38,7 @@ The system is composed of three core components:
             -Interactive filters and analytics
             -Session-based logging system
 
-## ⚙️ Key Features
+##  Key Features
  1. AI- Based Prediction Delay:
      Predicts delivery delay probability using 14 input features
      Provides interpretable risk output (High / Low)
@@ -53,7 +53,7 @@ The system is composed of three core components:
            -Time-based risk trends
            -Aggregate statistics (mean risk, counts)
 
-## 📈 Feature Engineering
+##  Feature Engineering
  The model leverages 14 carefully designed features:
       Raw Features
           price
@@ -84,7 +84,7 @@ These features collectively encode logistical complexity, temporal behavior, and
 <img width="1237" height="455" alt="image" src="https://github.com/user-attachments/assets/bd29ee5c-ec30-4c1d-bb58-443b83d398f9" />
 <img width="1237" height="574" alt="image" src="https://github.com/user-attachments/assets/0c494a7d-255c-4fcf-82a5-baf1d9282bd6" />
 
-##📂 Project Structure
+## Project Structure
 
 ```text
 ESALES_PROJECT/
@@ -118,7 +118,7 @@ ESALES_PROJECT/
     ├── data_preprocessing.py        # Data cleaning & merging
     ├── feature_engineering.py       # Feature creation
     ├── train_model.py               # Model training pipeline
-    └── evaluate_model.py           # Evaluation metrics & analysis
+    
 ## Installation & Usage
 ## 1. Clone Repository
      git clone https://github.com/yourusername/Esales_analysis.git
@@ -128,7 +128,7 @@ ESALES_PROJECT/
 ## 3. Run Application
      streamlit run app.py
 
-## 📊 Example Workflow
+##  Example Workflow
 Input order details (price, freight, time, etc.)
 Model predicts delay probability
 Result is logged in real time
@@ -141,7 +141,7 @@ https://screenapp.io/app/v/Cw4_G7xrPu
 
 
 
-## 📊 Real-Time System Behaviour
+##  Real-Time System Behaviour
 Unlike static dashboards, this system supports:
          - Immediate UI updates after each prediction
          - Dynamic chart re-rendering using session state
