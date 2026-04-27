@@ -86,7 +86,39 @@ These features collectively encode logistical complexity, temporal behavior, and
 
 ##📂 Project Structure
 
-ESALES_PROJECT │ .gitattributes │ README.md │ requirements.txt │ ├── app/ │ └── streamlit_app.py # Streamlit dashboard (UI + inference) │ ├── data/ │ ├── processed/ │ │ ├── esales_clean.csv # Final dataset used in dashboard │ │ └── preprocessed_data.csv # Intermediate processed data │ │ │ └── raw/ │ └── archive/ │ ├── olist_customers_dataset.csv │ ├── olist_orders_dataset.csv │ ├── olist_order_items_dataset.csv │ ├── olist_order_payments_dataset.csv │ ├── olist_products_dataset.csv │ └── product_category_name_translation.csv │ ├── models/ │ ├── delivery_delay_model.pkl # Primary trained model │ └── soft_voting_esales_model.pkl # Ensemble model │ └── src/ ├── data_preprocessing.py # Data cleaning & merging ├── feature_engineering.py # Feature creation ├── train_model.py # Model training pipeline └── evaluate_model.py # Evaluation metrics & analysis
+```text
+ESALES_PROJECT/
+│── .gitattributes
+│── README.md
+│── DATACARD.md
+│── requirements.txt
+│
+├── app/
+│   └── streamlit_app.py              # Streamlit dashboard (UI + inference)
+│
+├── data/
+│   ├── processed/
+│   │   ├── esales_clean.csv         # Final dataset used in dashboard
+│   │   └── preprocessed_data.csv    # Intermediate processed data
+│   │
+│   └── raw/
+│       └── archive/
+│           ├── olist_customers_dataset.csv
+│           ├── olist_orders_dataset.csv
+│           ├── olist_order_items_dataset.csv
+│           ├── olist_order_payments_dataset.csv
+│           ├── olist_products_dataset.csv
+│           └── product_category_name_translation.csv
+│
+├── models/
+│   ├── delivery_delay_model.pkl     # Primary trained model
+│   └── soft_voting_esales_model.pkl # Ensemble model
+│
+└── src/
+    ├── data_preprocessing.py        # Data cleaning & merging
+    ├── feature_engineering.py       # Feature creation
+    ├── train_model.py               # Model training pipeline
+    └── evaluate_model.py           # Evaluation metrics & analysis
 ## Installation & Usage
 ## 1. Clone Repository
      git clone https://github.com/yourusername/Esales_analysis.git
