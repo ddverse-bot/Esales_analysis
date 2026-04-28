@@ -118,7 +118,7 @@ ESALES_PROJECT/
     ├── data_preprocessing.py        # Data cleaning & merging
     ├── feature_engineering.py       # Feature creation
     ├── train_model.py               # Model training pipeline
-    
+```    
 ## Installation & Usage
 ## 1. Clone Repository
      git clone https://github.com/yourusername/Esales_analysis.git
