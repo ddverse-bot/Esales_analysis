@@ -126,7 +126,7 @@ ESALES_PROJECT/
 ## 2. Install Dependencies
      pip install -r requirements.txt
 ## 3. Run Application
-     streamlit run app.py
+     streamlit run app/streamlit_app.py
 
 ##  Example Workflow
 Input order details (price, freight, time, etc.)
